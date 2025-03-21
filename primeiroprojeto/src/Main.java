@@ -12,5 +12,8 @@ public class Main {
         int rating = (int) (avg/2);
         System.out.println(avg);
         System.out.println(rating);
+        double tempCelsius = 32;
+        int tempFahrenheit = (int)(tempCelsius * 1.8) + 32;
+        System.out.println("Temperatura em Fahrenheit é: " +tempFahrenheit + "F");
     }
 }
