@@ -3,7 +3,7 @@ public class Condicional {
         int age = 2001;
         boolean addInPlan = true;
         double rating = 8.1;
-        String typePlan = "plus";
+        String typePlan = "teste";
 
         if(age >= 2022){
             System.out.println("Filme lancamento que os clientes estao curtindo");
