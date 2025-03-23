@@ -19,10 +19,10 @@ public class Laco {
         */
 
         int numSecret = rd.nextInt(100);
-
-        System.out.println(numSecret);
+        int cont = 1;
+       boolean game = true;
         int num = 0;
-        for(int i = 0; i < 5; i++){
+        while(game){
             num = sc.nextInt();
             if(num != numSecret){
                 if(num > numSecret){
@@ -31,12 +31,16 @@ public class Laco {
                 if(num < numSecret){
                     System.out.println("Numero digitado menor que numero secreto");
                 }
-
+                cont++;
             }else{
                 System.out.println("Parabens, voce acertou o numero secreto");
                 break;
             }
+
+
         }
+        System.out.println("Numero de tentativas ate acertar " + cont);
+
 
 
 
