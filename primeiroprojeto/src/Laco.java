@@ -17,13 +17,30 @@ public class Laco {
 
         System.out.println("A media e:" + (avgMovie/3));
         */
-
-        int numSecret = rd.nextInt(100);
-        int cont = 1;
+        System.out.println("Escolha uma dificuldade:" +
+                "\n 1 - Facil(1 a 50) " +
+                "\n 2 - Moderado(1 a 250)" +
+                "\n 3 - Dificil(1 a 1000)");
+        String difficult = sc.nextLine();
+        int quantityNumbers = 0;
+        switch (difficult){
+            case "1":
+                quantityNumbers = 50;
+                break;
+            case "2":
+                quantityNumbers = 250;
+                break;
+            case "3":
+                quantityNumbers = 1000;
+                break;
+        }
+        int numSecret = rd.nextInt(quantityNumbers);
+        int cont = 0;
        boolean game = true;
-        int num = 0;
+        int num = 1;
         while(game){
             num = sc.nextInt();
+            cont++;
             if(num != numSecret){
                 if(num > numSecret){
                     System.out.println("Numero digitado maior que numero secreto");
@@ -31,7 +48,7 @@ public class Laco {
                 if(num < numSecret){
                     System.out.println("Numero digitado menor que numero secreto");
                 }
-                cont++;
+
             }else{
                 System.out.println("Parabens, voce acertou o numero secreto");
                 break;
