@@ -41,7 +41,6 @@ public class Main {
         double conversionForReal = valueInDollars * 5.76;
         System.out.println(conversionForReal);
 
-
         double priceOriginal = 550;
         double percentDiscount = 10;
         System.out.println((priceOriginal - (priceOriginal * (percentDiscount / 100))));
