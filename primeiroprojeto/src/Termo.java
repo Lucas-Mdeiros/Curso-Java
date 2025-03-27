@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Termo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String wordSecret = "exodo";
+        String wordSecret = "helio";
         boolean truFal = true;
         String word = "";
         char[] aList = new char[5];
